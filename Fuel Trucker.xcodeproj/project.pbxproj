@@ -1,0 +1,588 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 56;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		1C22C5D929BE84690019F4D3 /* Fuel_TruckerApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1C22C5D829BE84690019F4D3 /* Fuel_TruckerApp.swift */; };
+		1C22C5DB29BE84690019F4D3 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1C22C5DA29BE84690019F4D3 /* ContentView.swift */; };
+		1C22C5DD29BE846B0019F4D3 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1C22C5DC29BE846B0019F4D3 /* Assets.xcassets */; };
+		1C22C5E029BE846B0019F4D3 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1C22C5DF29BE846B0019F4D3 /* Preview Assets.xcassets */; };
+		1C22C5EA29BE846B0019F4D3 /* Fuel_TruckerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1C22C5E929BE846B0019F4D3 /* Fuel_TruckerTests.swift */; };
+		1C22C5F429BE846B0019F4D3 /* Fuel_TruckerUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1C22C5F329BE846B0019F4D3 /* Fuel_TruckerUITests.swift */; };
+		1C22C5F629BE846B0019F4D3 /* Fuel_TruckerUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1C22C5F529BE846B0019F4D3 /* Fuel_TruckerUITestsLaunchTests.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		1C22C5E629BE846B0019F4D3 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 1C22C5CD29BE84690019F4D3 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 1C22C5D429BE84690019F4D3;
+			remoteInfo = "Fuel Trucker";
+		};
+		1C22C5F029BE846B0019F4D3 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 1C22C5CD29BE84690019F4D3 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 1C22C5D429BE84690019F4D3;
+			remoteInfo = "Fuel Trucker";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		1C22C5D529BE84690019F4D3 /* Fuel Trucker.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Fuel Trucker.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		1C22C5D829BE84690019F4D3 /* Fuel_TruckerApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Fuel_TruckerApp.swift; sourceTree = "<group>"; };
+		1C22C5DA29BE84690019F4D3 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		1C22C5DC29BE846B0019F4D3 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		1C22C5DF29BE846B0019F4D3 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		1C22C5E529BE846B0019F4D3 /* Fuel TruckerTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Fuel TruckerTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		1C22C5E929BE846B0019F4D3 /* Fuel_TruckerTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Fuel_TruckerTests.swift; sourceTree = "<group>"; };
+		1C22C5EF29BE846B0019F4D3 /* Fuel TruckerUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Fuel TruckerUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		1C22C5F329BE846B0019F4D3 /* Fuel_TruckerUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Fuel_TruckerUITests.swift; sourceTree = "<group>"; };
+		1C22C5F529BE846B0019F4D3 /* Fuel_TruckerUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Fuel_TruckerUITestsLaunchTests.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		1C22C5D229BE84690019F4D3 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		1C22C5E229BE846B0019F4D3 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		1C22C5EC29BE846B0019F4D3 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		1C22C5CC29BE84690019F4D3 = {
+			isa = PBXGroup;
+			children = (
+				1C22C5D729BE84690019F4D3 /* Fuel Trucker */,
+				1C22C5E829BE846B0019F4D3 /* Fuel TruckerTests */,
+				1C22C5F229BE846B0019F4D3 /* Fuel TruckerUITests */,
+				1C22C5D629BE84690019F4D3 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		1C22C5D629BE84690019F4D3 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				1C22C5D529BE84690019F4D3 /* Fuel Trucker.app */,
+				1C22C5E529BE846B0019F4D3 /* Fuel TruckerTests.xctest */,
+				1C22C5EF29BE846B0019F4D3 /* Fuel TruckerUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		1C22C5D729BE84690019F4D3 /* Fuel Trucker */ = {
+			isa = PBXGroup;
+			children = (
+				1C22C5D829BE84690019F4D3 /* Fuel_TruckerApp.swift */,
+				1C22C5DA29BE84690019F4D3 /* ContentView.swift */,
+				1C22C5DC29BE846B0019F4D3 /* Assets.xcassets */,
+				1C22C5DE29BE846B0019F4D3 /* Preview Content */,
+			);
+			path = "Fuel Trucker";
+			sourceTree = "<group>";
+		};
+		1C22C5DE29BE846B0019F4D3 /* Preview Content */ = {
+			isa = PBXGroup;
+			children = (
+				1C22C5DF29BE846B0019F4D3 /* Preview Assets.xcassets */,
+			);
+			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		1C22C5E829BE846B0019F4D3 /* Fuel TruckerTests */ = {
+			isa = PBXGroup;
+			children = (
+				1C22C5E929BE846B0019F4D3 /* Fuel_TruckerTests.swift */,
+			);
+			path = "Fuel TruckerTests";
+			sourceTree = "<group>";
+		};
+		1C22C5F229BE846B0019F4D3 /* Fuel TruckerUITests */ = {
+			isa = PBXGroup;
+			children = (
+				1C22C5F329BE846B0019F4D3 /* Fuel_TruckerUITests.swift */,
+				1C22C5F529BE846B0019F4D3 /* Fuel_TruckerUITestsLaunchTests.swift */,
+			);
+			path = "Fuel TruckerUITests";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		1C22C5D429BE84690019F4D3 /* Fuel Trucker */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 1C22C5F929BE846B0019F4D3 /* Build configuration list for PBXNativeTarget "Fuel Trucker" */;
+			buildPhases = (
+				1C22C5D129BE84690019F4D3 /* Sources */,
+				1C22C5D229BE84690019F4D3 /* Frameworks */,
+				1C22C5D329BE84690019F4D3 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Fuel Trucker";
+			productName = "Fuel Trucker";
+			productReference = 1C22C5D529BE84690019F4D3 /* Fuel Trucker.app */;
+			productType = "com.apple.product-type.application";
+		};
+		1C22C5E429BE846B0019F4D3 /* Fuel TruckerTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 1C22C5FC29BE846B0019F4D3 /* Build configuration list for PBXNativeTarget "Fuel TruckerTests" */;
+			buildPhases = (
+				1C22C5E129BE846B0019F4D3 /* Sources */,
+				1C22C5E229BE846B0019F4D3 /* Frameworks */,
+				1C22C5E329BE846B0019F4D3 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				1C22C5E729BE846B0019F4D3 /* PBXTargetDependency */,
+			);
+			name = "Fuel TruckerTests";
+			productName = "Fuel TruckerTests";
+			productReference = 1C22C5E529BE846B0019F4D3 /* Fuel TruckerTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		1C22C5EE29BE846B0019F4D3 /* Fuel TruckerUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 1C22C5FF29BE846B0019F4D3 /* Build configuration list for PBXNativeTarget "Fuel TruckerUITests" */;
+			buildPhases = (
+				1C22C5EB29BE846B0019F4D3 /* Sources */,
+				1C22C5EC29BE846B0019F4D3 /* Frameworks */,
+				1C22C5ED29BE846B0019F4D3 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				1C22C5F129BE846B0019F4D3 /* PBXTargetDependency */,
+			);
+			name = "Fuel TruckerUITests";
+			productName = "Fuel TruckerUITests";
+			productReference = 1C22C5EF29BE846B0019F4D3 /* Fuel TruckerUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		1C22C5CD29BE84690019F4D3 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1420;
+				LastUpgradeCheck = 1420;
+				TargetAttributes = {
+					1C22C5D429BE84690019F4D3 = {
+						CreatedOnToolsVersion = 14.2;
+					};
+					1C22C5E429BE846B0019F4D3 = {
+						CreatedOnToolsVersion = 14.2;
+						TestTargetID = 1C22C5D429BE84690019F4D3;
+					};
+					1C22C5EE29BE846B0019F4D3 = {
+						CreatedOnToolsVersion = 14.2;
+						TestTargetID = 1C22C5D429BE84690019F4D3;
+					};
+				};
+			};
+			buildConfigurationList = 1C22C5D029BE84690019F4D3 /* Build configuration list for PBXProject "Fuel Trucker" */;
+			compatibilityVersion = "Xcode 14.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 1C22C5CC29BE84690019F4D3;
+			productRefGroup = 1C22C5D629BE84690019F4D3 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				1C22C5D429BE84690019F4D3 /* Fuel Trucker */,
+				1C22C5E429BE846B0019F4D3 /* Fuel TruckerTests */,
+				1C22C5EE29BE846B0019F4D3 /* Fuel TruckerUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		1C22C5D329BE84690019F4D3 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1C22C5E029BE846B0019F4D3 /* Preview Assets.xcassets in Resources */,
+				1C22C5DD29BE846B0019F4D3 /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		1C22C5E329BE846B0019F4D3 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		1C22C5ED29BE846B0019F4D3 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		1C22C5D129BE84690019F4D3 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1C22C5DB29BE84690019F4D3 /* ContentView.swift in Sources */,
+				1C22C5D929BE84690019F4D3 /* Fuel_TruckerApp.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		1C22C5E129BE846B0019F4D3 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1C22C5EA29BE846B0019F4D3 /* Fuel_TruckerTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		1C22C5EB29BE846B0019F4D3 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1C22C5F429BE846B0019F4D3 /* Fuel_TruckerUITests.swift in Sources */,
+				1C22C5F629BE846B0019F4D3 /* Fuel_TruckerUITestsLaunchTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		1C22C5E729BE846B0019F4D3 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 1C22C5D429BE84690019F4D3 /* Fuel Trucker */;
+			targetProxy = 1C22C5E629BE846B0019F4D3 /* PBXContainerItemProxy */;
+		};
+		1C22C5F129BE846B0019F4D3 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 1C22C5D429BE84690019F4D3 /* Fuel Trucker */;
+			targetProxy = 1C22C5F029BE846B0019F4D3 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		1C22C5F729BE846B0019F4D3 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.2;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		1C22C5F829BE846B0019F4D3 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		1C22C5FA29BE846B0019F4D3 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"Fuel Trucker/Preview Content\"";
+				DEVELOPMENT_TEAM = 5ZTH5PVR9R;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "mederland.Fuel-Trucker";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		1C22C5FB29BE846B0019F4D3 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"Fuel Trucker/Preview Content\"";
+				DEVELOPMENT_TEAM = 5ZTH5PVR9R;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "mederland.Fuel-Trucker";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		1C22C5FD29BE846B0019F4D3 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 5ZTH5PVR9R;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.2;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "mederland.Fuel-TruckerTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Fuel Trucker.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/Fuel Trucker";
+			};
+			name = Debug;
+		};
+		1C22C5FE29BE846B0019F4D3 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 5ZTH5PVR9R;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.2;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "mederland.Fuel-TruckerTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Fuel Trucker.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/Fuel Trucker";
+			};
+			name = Release;
+		};
+		1C22C60029BE846B0019F4D3 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 5ZTH5PVR9R;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "mederland.Fuel-TruckerUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = "Fuel Trucker";
+			};
+			name = Debug;
+		};
+		1C22C60129BE846B0019F4D3 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 5ZTH5PVR9R;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "mederland.Fuel-TruckerUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = "Fuel Trucker";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		1C22C5D029BE84690019F4D3 /* Build configuration list for PBXProject "Fuel Trucker" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				1C22C5F729BE846B0019F4D3 /* Debug */,
+				1C22C5F829BE846B0019F4D3 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		1C22C5F929BE846B0019F4D3 /* Build configuration list for PBXNativeTarget "Fuel Trucker" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				1C22C5FA29BE846B0019F4D3 /* Debug */,
+				1C22C5FB29BE846B0019F4D3 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		1C22C5FC29BE846B0019F4D3 /* Build configuration list for PBXNativeTarget "Fuel TruckerTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				1C22C5FD29BE846B0019F4D3 /* Debug */,
+				1C22C5FE29BE846B0019F4D3 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		1C22C5FF29BE846B0019F4D3 /* Build configuration list for PBXNativeTarget "Fuel TruckerUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				1C22C60029BE846B0019F4D3 /* Debug */,
+				1C22C60129BE846B0019F4D3 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 1C22C5CD29BE84690019F4D3 /* Project object */;
+}
