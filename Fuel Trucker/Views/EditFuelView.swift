@@ -8,13 +8,37 @@
 import SwiftUI
 
 struct EditFuelView: View {
+    @Environment (\.managedObjectContext) var managedObjContext
+    @Environment(\.dismiss) var dismiss
+    
+    var fuel: FetchedResults<Fuel>.Element
+    @State private var city = ""
+    @State private var summaries: Float = 0.0
+    
     var body: some View {
-        Text(/*@START_MENU_TOKEN@*/"Hello, World!"/*@END_MENU_TOKEN@*/)
+        Form {
+            Section {
+                TextField("\(fuel.city!)", text: $city)
+                    .onAppear {
+                        city = fuel.city!
+                        summaries = fuel.summary
+                    }
+                VStack {
+                    Text("Total: \(String(summaries))")
+//                    TextField("Total: ", text: $summaries)
+                    Slider(value: $summaries, in: 0...1000, step: 0.01)
+                }
+                .padding()
+                
+                HStack {
+                    Spacer()
+                    Button("Submit"){
+                        DataController().editFuel(fuel: fuel, city: city, summary: summaries, context: managedObjContext)
+                            dismiss()
+                    }
+                }
+            }
+        }
     }
 }
 
-struct EditFuelView_Previews: PreviewProvider {
-    static var previews: some View {
-        EditFuelView()
-    }
-}
