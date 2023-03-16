@@ -14,6 +14,7 @@ struct CalendarView: View {
     @State var chosenDate = Date()
     @State private var showingAddView = false
     @State private var showingDayView = false
+    @State var navigationActive = false
     var body: some View {
         NavigationView{
             VStack{
@@ -54,16 +55,13 @@ struct CalendarView: View {
            }
                DatePicker("Fuel Date", selection: $chosenDate, in: ...Date(), displayedComponents: .date)
                    .datePickerStyle(GraphicalDatePickerStyle())
-                   .overlay(
-                    Button(action: {
-                        showingDayView.toggle()
-                    }, label: {
-                        EmptyView()
-                    })
-                    .sheet(isPresented: $showingDayView){
-                        DayView()
-                    }
-                   )
+                   .onChange(of: chosenDate, perform: { value in
+                       print(chosenDate)
+                       DispatchQueue.main.asyncAfter(deadline: .now() + 0.2) { //this is because, otherwise user will not see the date selection on date picker
+                           navigationActive = true
+                       }
+               })
+           NavigationLink("", destination: DayView(), isActive: $navigationActive)
        }
     }
 }
