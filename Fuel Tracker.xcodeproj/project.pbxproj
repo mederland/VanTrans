@@ -7,7 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		1C22C5D929BE84690019F4D3 /* Fuel_TruckerApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1C22C5D829BE84690019F4D3 /* Fuel_TruckerApp.swift */; };
+		1C22C5D929BE84690019F4D3 /* Fuel_TrackerApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1C22C5D829BE84690019F4D3 /* Fuel_TrackerApp.swift */; };
 		1C22C5DD29BE846B0019F4D3 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1C22C5DC29BE846B0019F4D3 /* Assets.xcassets */; };
 		1C22C5E029BE846B0019F4D3 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1C22C5DF29BE846B0019F4D3 /* Preview Assets.xcassets */; };
 		1C22C5EA29BE846B0019F4D3 /* Fuel_TruckerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1C22C5E929BE846B0019F4D3 /* Fuel_TruckerTests.swift */; };
@@ -40,13 +40,13 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		1C22C5D529BE84690019F4D3 /* Fuel Trucker.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Fuel Trucker.app"; sourceTree = BUILT_PRODUCTS_DIR; };
-		1C22C5D829BE84690019F4D3 /* Fuel_TruckerApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Fuel_TruckerApp.swift; sourceTree = "<group>"; };
+		1C22C5D529BE84690019F4D3 /* Fuel Tracker.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Fuel Tracker.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		1C22C5D829BE84690019F4D3 /* Fuel_TrackerApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Fuel_TrackerApp.swift; sourceTree = "<group>"; };
 		1C22C5DC29BE846B0019F4D3 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		1C22C5DF29BE846B0019F4D3 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
-		1C22C5E529BE846B0019F4D3 /* Fuel TruckerTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Fuel TruckerTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		1C22C5E529BE846B0019F4D3 /* Fuel TrackerTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Fuel TrackerTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		1C22C5E929BE846B0019F4D3 /* Fuel_TruckerTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Fuel_TruckerTests.swift; sourceTree = "<group>"; };
-		1C22C5EF29BE846B0019F4D3 /* Fuel TruckerUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Fuel TruckerUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		1C22C5EF29BE846B0019F4D3 /* Fuel TrackerUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Fuel TrackerUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		1C22C5F329BE846B0019F4D3 /* Fuel_TruckerUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Fuel_TruckerUITests.swift; sourceTree = "<group>"; };
 		1C22C5F529BE846B0019F4D3 /* Fuel_TruckerUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Fuel_TruckerUITestsLaunchTests.swift; sourceTree = "<group>"; };
 		1C22C60429BE86EC0019F4D3 /* FuelModel.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = FuelModel.xcdatamodel; sourceTree = "<group>"; };
@@ -86,7 +86,7 @@
 		1C22C5CC29BE84690019F4D3 = {
 			isa = PBXGroup;
 			children = (
-				1C22C5D729BE84690019F4D3 /* Fuel Trucker */,
+				1C22C5D729BE84690019F4D3 /* Fuel Tracker */,
 				1C22C5E829BE846B0019F4D3 /* Fuel TruckerTests */,
 				1C22C5F229BE846B0019F4D3 /* Fuel TruckerUITests */,
 				1C22C5D629BE84690019F4D3 /* Products */,
@@ -96,24 +96,24 @@
 		1C22C5D629BE84690019F4D3 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				1C22C5D529BE84690019F4D3 /* Fuel Trucker.app */,
-				1C22C5E529BE846B0019F4D3 /* Fuel TruckerTests.xctest */,
-				1C22C5EF29BE846B0019F4D3 /* Fuel TruckerUITests.xctest */,
+				1C22C5D529BE84690019F4D3 /* Fuel Tracker.app */,
+				1C22C5E529BE846B0019F4D3 /* Fuel TrackerTests.xctest */,
+				1C22C5EF29BE846B0019F4D3 /* Fuel TrackerUITests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
 		};
-		1C22C5D729BE84690019F4D3 /* Fuel Trucker */ = {
+		1C22C5D729BE84690019F4D3 /* Fuel Tracker */ = {
 			isa = PBXGroup;
 			children = (
-				1C22C5D829BE84690019F4D3 /* Fuel_TruckerApp.swift */,
+				1C22C5D829BE84690019F4D3 /* Fuel_TrackerApp.swift */,
 				1C22C60229BE86A50019F4D3 /* DataModel */,
 				1C22C60829BE8E6C0019F4D3 /* Views */,
 				1C22C60929BE8E8C0019F4D3 /* Helpers */,
 				1C22C5DC29BE846B0019F4D3 /* Assets.xcassets */,
 				1C22C5DE29BE846B0019F4D3 /* Preview Content */,
 			);
-			path = "Fuel Trucker";
+			path = "Fuel Tracker";
 			sourceTree = "<group>";
 		};
 		1C22C5DE29BE846B0019F4D3 /* Preview Content */ = {
@@ -172,9 +172,9 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		1C22C5D429BE84690019F4D3 /* Fuel Trucker */ = {
+		1C22C5D429BE84690019F4D3 /* Fuel Tracker */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 1C22C5F929BE846B0019F4D3 /* Build configuration list for PBXNativeTarget "Fuel Trucker" */;
+			buildConfigurationList = 1C22C5F929BE846B0019F4D3 /* Build configuration list for PBXNativeTarget "Fuel Tracker" */;
 			buildPhases = (
 				1C22C5D129BE84690019F4D3 /* Sources */,
 				1C22C5D229BE84690019F4D3 /* Frameworks */,
@@ -184,14 +184,14 @@
 			);
 			dependencies = (
 			);
-			name = "Fuel Trucker";
+			name = "Fuel Tracker";
 			productName = "Fuel Trucker";
-			productReference = 1C22C5D529BE84690019F4D3 /* Fuel Trucker.app */;
+			productReference = 1C22C5D529BE84690019F4D3 /* Fuel Tracker.app */;
 			productType = "com.apple.product-type.application";
 		};
-		1C22C5E429BE846B0019F4D3 /* Fuel TruckerTests */ = {
+		1C22C5E429BE846B0019F4D3 /* Fuel TrackerTests */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 1C22C5FC29BE846B0019F4D3 /* Build configuration list for PBXNativeTarget "Fuel TruckerTests" */;
+			buildConfigurationList = 1C22C5FC29BE846B0019F4D3 /* Build configuration list for PBXNativeTarget "Fuel TrackerTests" */;
 			buildPhases = (
 				1C22C5E129BE846B0019F4D3 /* Sources */,
 				1C22C5E229BE846B0019F4D3 /* Frameworks */,
@@ -202,14 +202,14 @@
 			dependencies = (
 				1C22C5E729BE846B0019F4D3 /* PBXTargetDependency */,
 			);
-			name = "Fuel TruckerTests";
+			name = "Fuel TrackerTests";
 			productName = "Fuel TruckerTests";
-			productReference = 1C22C5E529BE846B0019F4D3 /* Fuel TruckerTests.xctest */;
+			productReference = 1C22C5E529BE846B0019F4D3 /* Fuel TrackerTests.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
 		};
-		1C22C5EE29BE846B0019F4D3 /* Fuel TruckerUITests */ = {
+		1C22C5EE29BE846B0019F4D3 /* Fuel TrackerUITests */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 1C22C5FF29BE846B0019F4D3 /* Build configuration list for PBXNativeTarget "Fuel TruckerUITests" */;
+			buildConfigurationList = 1C22C5FF29BE846B0019F4D3 /* Build configuration list for PBXNativeTarget "Fuel TrackerUITests" */;
 			buildPhases = (
 				1C22C5EB29BE846B0019F4D3 /* Sources */,
 				1C22C5EC29BE846B0019F4D3 /* Frameworks */,
@@ -220,9 +220,9 @@
 			dependencies = (
 				1C22C5F129BE846B0019F4D3 /* PBXTargetDependency */,
 			);
-			name = "Fuel TruckerUITests";
+			name = "Fuel TrackerUITests";
 			productName = "Fuel TruckerUITests";
-			productReference = 1C22C5EF29BE846B0019F4D3 /* Fuel TruckerUITests.xctest */;
+			productReference = 1C22C5EF29BE846B0019F4D3 /* Fuel TrackerUITests.xctest */;
 			productType = "com.apple.product-type.bundle.ui-testing";
 		};
 /* End PBXNativeTarget section */
@@ -248,7 +248,7 @@
 					};
 				};
 			};
-			buildConfigurationList = 1C22C5D029BE84690019F4D3 /* Build configuration list for PBXProject "Fuel Trucker" */;
+			buildConfigurationList = 1C22C5D029BE84690019F4D3 /* Build configuration list for PBXProject "Fuel Tracker" */;
 			compatibilityVersion = "Xcode 14.0";
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
@@ -261,9 +261,9 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				1C22C5D429BE84690019F4D3 /* Fuel Trucker */,
-				1C22C5E429BE846B0019F4D3 /* Fuel TruckerTests */,
-				1C22C5EE29BE846B0019F4D3 /* Fuel TruckerUITests */,
+				1C22C5D429BE84690019F4D3 /* Fuel Tracker */,
+				1C22C5E429BE846B0019F4D3 /* Fuel TrackerTests */,
+				1C22C5EE29BE846B0019F4D3 /* Fuel TrackerUITests */,
 			);
 		};
 /* End PBXProject section */
@@ -301,7 +301,7 @@
 			files = (
 				1C22C60729BE89150019F4D3 /* DataController.swift in Sources */,
 				1CBDB91829C251520036438A /* CalendarView.swift in Sources */,
-				1C22C5D929BE84690019F4D3 /* Fuel_TruckerApp.swift in Sources */,
+				1C22C5D929BE84690019F4D3 /* Fuel_TrackerApp.swift in Sources */,
 				1CBDB91A29C252D70036438A /* DayView.swift in Sources */,
 				1C22C60F29BEB1EB0019F4D3 /* EditFuelView.swift in Sources */,
 				1C22C60529BE86EC0019F4D3 /* FuelModel.xcdatamodeld in Sources */,
@@ -332,12 +332,12 @@
 /* Begin PBXTargetDependency section */
 		1C22C5E729BE846B0019F4D3 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			target = 1C22C5D429BE84690019F4D3 /* Fuel Trucker */;
+			target = 1C22C5D429BE84690019F4D3 /* Fuel Tracker */;
 			targetProxy = 1C22C5E629BE846B0019F4D3 /* PBXContainerItemProxy */;
 		};
 		1C22C5F129BE846B0019F4D3 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			target = 1C22C5D429BE84690019F4D3 /* Fuel Trucker */;
+			target = 1C22C5D429BE84690019F4D3 /* Fuel Tracker */;
 			targetProxy = 1C22C5F029BE846B0019F4D3 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
@@ -464,7 +464,7 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_ASSET_PATHS = "\"Fuel Trucker/Preview Content\"";
+				DEVELOPMENT_ASSET_PATHS = "\"Fuel Tracker/Preview Content\"";
 				DEVELOPMENT_TEAM = 5ZTH5PVR9R;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
@@ -493,7 +493,7 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_ASSET_PATHS = "\"Fuel Trucker/Preview Content\"";
+				DEVELOPMENT_ASSET_PATHS = "\"Fuel Tracker/Preview Content\"";
 				DEVELOPMENT_TEAM = 5ZTH5PVR9R;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
@@ -531,7 +531,7 @@
 				SWIFT_EMIT_LOC_STRINGS = NO;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Fuel Trucker.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/Fuel Trucker";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Fuel Tracker.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/Fuel Tracker";
 			};
 			name = Debug;
 		};
@@ -551,7 +551,7 @@
 				SWIFT_EMIT_LOC_STRINGS = NO;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Fuel Trucker.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/Fuel Trucker";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Fuel Tracker.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/Fuel Tracker";
 			};
 			name = Release;
 		};
@@ -594,7 +594,7 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		1C22C5D029BE84690019F4D3 /* Build configuration list for PBXProject "Fuel Trucker" */ = {
+		1C22C5D029BE84690019F4D3 /* Build configuration list for PBXProject "Fuel Tracker" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				1C22C5F729BE846B0019F4D3 /* Debug */,
@@ -603,7 +603,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		1C22C5F929BE846B0019F4D3 /* Build configuration list for PBXNativeTarget "Fuel Trucker" */ = {
+		1C22C5F929BE846B0019F4D3 /* Build configuration list for PBXNativeTarget "Fuel Tracker" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				1C22C5FA29BE846B0019F4D3 /* Debug */,
@@ -612,7 +612,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		1C22C5FC29BE846B0019F4D3 /* Build configuration list for PBXNativeTarget "Fuel TruckerTests" */ = {
+		1C22C5FC29BE846B0019F4D3 /* Build configuration list for PBXNativeTarget "Fuel TrackerTests" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				1C22C5FD29BE846B0019F4D3 /* Debug */,
@@ -621,7 +621,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		1C22C5FF29BE846B0019F4D3 /* Build configuration list for PBXNativeTarget "Fuel TruckerUITests" */ = {
+		1C22C5FF29BE846B0019F4D3 /* Build configuration list for PBXNativeTarget "Fuel TrackerUITests" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				1C22C60029BE846B0019F4D3 /* Debug */,

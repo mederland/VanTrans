@@ -22,7 +22,7 @@ struct CalendarView: View {
             }
             .toolbar {
             ToolbarItem(placement: .navigationBarLeading) {
-             Text("Fuel Trucker")
+             Text("Fuel Tracker")
                 .font(.largeTitle.bold())
                  .accessibilityAddTraits(.isHeader)
                 Spacer()
