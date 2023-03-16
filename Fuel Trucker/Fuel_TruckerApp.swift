@@ -13,7 +13,7 @@ struct Fuel_TruckerApp: App {
     
     var body: some Scene {
         WindowGroup {
-            ContentView()
+            CalendarView()
                 .environment(\.managedObjectContext, dataController.container.viewContext)
         }
     }
