@@ -13,29 +13,21 @@ struct AddFuelView: View {
     @Environment(\.dismiss) var dismiss
     
     @State private var city = ""
-    @State private var summaries: Float = 0.0
+    @State private var summaries = ""
     var body: some View {
         Form {
             Section {
                 TextField("Fuel City", text: $city)
-                VStack {
-                    Text("Total: \(String(summaries))")
-                    Slider (value: $summaries, in: 0...1000, step: 0.01)
-//                    TextField("Total: ", text: $summaries)
-                               .keyboardType(.numberPad)
-//                               .onReceive(Just(summaries)) { newValue in
-//                                   let filtered = newValue.filter { "0123456789".contains($0) }
-//                                   if filtered != newValue {
-//                                       self.numOfPeople = filtered
-//                                   }
-//                               }
-//                    TextField("Total", text: $summaries)
+                HStack {
+                    Text("Fuel :")
+                    TextField("Amount of gas in $: ", text: $summaries)
+                        .keyboardType(.decimalPad)
                 }
                 .padding()
                 HStack{
                     Spacer()
                     Button("Submit"){
-                        DataController().addFuel(city: city, summary: summaries, context: managedObjContext)
+                        DataController().addFuel(city: city, summary: Float(summaries) ?? 0.0, context: managedObjContext)
                         dismiss()
                     }
                 }

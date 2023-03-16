@@ -34,14 +34,12 @@ class DataController: ObservableObject {
         fuel.date = Date()
         fuel.city = city
         fuel.summary = summary
-        
         saveData(context: context)
     }
     
     func editFuel(fuel: Fuel, city: String, summary: Float, context: NSManagedObjectContext){
-        fuel.date = Date()
         fuel.city = city
-        
+        fuel.summary = summary
         saveData(context: context)
     }
 }

@@ -13,7 +13,7 @@ struct EditFuelView: View {
     
     var fuel: FetchedResults<Fuel>.Element
     @State private var city = ""
-    @State private var summaries: Float = 0.0
+    @State private var summaries = ""
     
     var body: some View {
         Form {
@@ -21,19 +21,19 @@ struct EditFuelView: View {
                 TextField("\(fuel.city!)", text: $city)
                     .onAppear {
                         city = fuel.city!
-                        summaries = fuel.summary
+                        summaries = String(fuel.summary)
                     }
-                VStack {
-                    Text("Total: \(String(summaries))")
-//                    TextField("Total: ", text: $summaries)
-                    Slider(value: $summaries, in: 0...1000, step: 0.01)
+                HStack {
+                    Text("Fuel :")
+                    TextField("Amount of gas in $:  ", text: $summaries)
+                        .keyboardType(.decimalPad)
                 }
                 .padding()
                 
                 HStack {
                     Spacer()
                     Button("Submit"){
-                        DataController().editFuel(fuel: fuel, city: city, summary: summaries, context: managedObjContext)
+                        DataController().editFuel(fuel: fuel, city: city, summary: Float(summaries) ?? 0.0, context: managedObjContext)
                             dismiss()
                     }
                 }
