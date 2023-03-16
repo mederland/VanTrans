@@ -1,6 +1,6 @@
 //
-//  Fuel_TruckerApp.swift
-//  Fuel Trucker
+//  Fuel_TrackerApp.swift
+//  Fuel Tracker
 //
 //  Created by Meder iZimov on 3/12/23.
 //

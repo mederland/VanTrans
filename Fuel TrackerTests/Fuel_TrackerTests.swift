@@ -1,14 +1,14 @@
 //
-//  Fuel_TruckerTests.swift
-//  Fuel TruckerTests
+//  Fuel_TrackerTests.swift
+//  Fuel TrackerTests
 //
 //  Created by Meder iZimov on 3/12/23.
 //
 
 import XCTest
-@testable import Fuel_Trucker
+@testable import Fuel_Tracker
 
-final class Fuel_TruckerTests: XCTestCase {
+final class Fuel_TrackerTests: XCTestCase {
 
     override func setUpWithError() throws {
         // Put setup code here. This method is called before the invocation of each test method in the class.

@@ -1,6 +1,6 @@
 //
 //  TimeFormatting.swift
-//  Fuel Trucker
+//  Fuel Tracker
 //
 //  Created by Meder iZimov on 3/12/23.
 //

@@ -1,13 +1,13 @@
 //
-//  Fuel_TruckerUITests.swift
-//  Fuel TruckerUITests
+//  Fuel_TrackerUITests.swift
+//  Fuel TrackerUITests
 //
 //  Created by Meder iZimov on 3/12/23.
 //
 
 import XCTest
 
-final class Fuel_TruckerUITests: XCTestCase {
+final class Fuel_TrackerUITests: XCTestCase {
 
     override func setUpWithError() throws {
         // Put setup code here. This method is called before the invocation of each test method in the class.

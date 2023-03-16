@@ -1,13 +1,13 @@
 //
-//  Fuel_TruckerUITestsLaunchTests.swift
-//  Fuel TruckerUITests
+//  Fuel_TrackerUITestsLaunchTests.swift
+//  Fuel TrackerUITests
 //
 //  Created by Meder iZimov on 3/12/23.
 //
 
 import XCTest
 
-final class Fuel_TruckerUITestsLaunchTests: XCTestCase {
+final class Fuel_TrackerUITestsLaunchTests: XCTestCase {
 
     override class var runsForEachTargetApplicationUIConfiguration: Bool {
         true

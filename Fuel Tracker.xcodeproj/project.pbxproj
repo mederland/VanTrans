@@ -10,9 +10,9 @@
 		1C22C5D929BE84690019F4D3 /* Fuel_TrackerApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1C22C5D829BE84690019F4D3 /* Fuel_TrackerApp.swift */; };
 		1C22C5DD29BE846B0019F4D3 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1C22C5DC29BE846B0019F4D3 /* Assets.xcassets */; };
 		1C22C5E029BE846B0019F4D3 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1C22C5DF29BE846B0019F4D3 /* Preview Assets.xcassets */; };
-		1C22C5EA29BE846B0019F4D3 /* Fuel_TruckerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1C22C5E929BE846B0019F4D3 /* Fuel_TruckerTests.swift */; };
-		1C22C5F429BE846B0019F4D3 /* Fuel_TruckerUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1C22C5F329BE846B0019F4D3 /* Fuel_TruckerUITests.swift */; };
-		1C22C5F629BE846B0019F4D3 /* Fuel_TruckerUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1C22C5F529BE846B0019F4D3 /* Fuel_TruckerUITestsLaunchTests.swift */; };
+		1C22C5EA29BE846B0019F4D3 /* Fuel_TrackerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1C22C5E929BE846B0019F4D3 /* Fuel_TrackerTests.swift */; };
+		1C22C5F429BE846B0019F4D3 /* Fuel_TrackerUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1C22C5F329BE846B0019F4D3 /* Fuel_TrackerUITests.swift */; };
+		1C22C5F629BE846B0019F4D3 /* Fuel_TrackerUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1C22C5F529BE846B0019F4D3 /* Fuel_TrackerUITestsLaunchTests.swift */; };
 		1C22C60529BE86EC0019F4D3 /* FuelModel.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 1C22C60329BE86EC0019F4D3 /* FuelModel.xcdatamodeld */; };
 		1C22C60729BE89150019F4D3 /* DataController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1C22C60629BE89150019F4D3 /* DataController.swift */; };
 		1C22C60B29BE96C40019F4D3 /* AddFuelView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1C22C60A29BE96C40019F4D3 /* AddFuelView.swift */; };
@@ -45,10 +45,10 @@
 		1C22C5DC29BE846B0019F4D3 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		1C22C5DF29BE846B0019F4D3 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		1C22C5E529BE846B0019F4D3 /* Fuel TrackerTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Fuel TrackerTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
-		1C22C5E929BE846B0019F4D3 /* Fuel_TruckerTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Fuel_TruckerTests.swift; sourceTree = "<group>"; };
+		1C22C5E929BE846B0019F4D3 /* Fuel_TrackerTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Fuel_TrackerTests.swift; sourceTree = "<group>"; };
 		1C22C5EF29BE846B0019F4D3 /* Fuel TrackerUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Fuel TrackerUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
-		1C22C5F329BE846B0019F4D3 /* Fuel_TruckerUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Fuel_TruckerUITests.swift; sourceTree = "<group>"; };
-		1C22C5F529BE846B0019F4D3 /* Fuel_TruckerUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Fuel_TruckerUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		1C22C5F329BE846B0019F4D3 /* Fuel_TrackerUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Fuel_TrackerUITests.swift; sourceTree = "<group>"; };
+		1C22C5F529BE846B0019F4D3 /* Fuel_TrackerUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Fuel_TrackerUITestsLaunchTests.swift; sourceTree = "<group>"; };
 		1C22C60429BE86EC0019F4D3 /* FuelModel.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = FuelModel.xcdatamodel; sourceTree = "<group>"; };
 		1C22C60629BE89150019F4D3 /* DataController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataController.swift; sourceTree = "<group>"; };
 		1C22C60A29BE96C40019F4D3 /* AddFuelView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddFuelView.swift; sourceTree = "<group>"; };
@@ -87,8 +87,8 @@
 			isa = PBXGroup;
 			children = (
 				1C22C5D729BE84690019F4D3 /* Fuel Tracker */,
-				1C22C5E829BE846B0019F4D3 /* Fuel TruckerTests */,
-				1C22C5F229BE846B0019F4D3 /* Fuel TruckerUITests */,
+				1C22C5E829BE846B0019F4D3 /* Fuel TrackerTests */,
+				1C22C5F229BE846B0019F4D3 /* Fuel TrackerUITests */,
 				1C22C5D629BE84690019F4D3 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -124,21 +124,21 @@
 			path = "Preview Content";
 			sourceTree = "<group>";
 		};
-		1C22C5E829BE846B0019F4D3 /* Fuel TruckerTests */ = {
+		1C22C5E829BE846B0019F4D3 /* Fuel TrackerTests */ = {
 			isa = PBXGroup;
 			children = (
-				1C22C5E929BE846B0019F4D3 /* Fuel_TruckerTests.swift */,
+				1C22C5E929BE846B0019F4D3 /* Fuel_TrackerTests.swift */,
 			);
-			path = "Fuel TruckerTests";
+			path = "Fuel TrackerTests";
 			sourceTree = "<group>";
 		};
-		1C22C5F229BE846B0019F4D3 /* Fuel TruckerUITests */ = {
+		1C22C5F229BE846B0019F4D3 /* Fuel TrackerUITests */ = {
 			isa = PBXGroup;
 			children = (
-				1C22C5F329BE846B0019F4D3 /* Fuel_TruckerUITests.swift */,
-				1C22C5F529BE846B0019F4D3 /* Fuel_TruckerUITestsLaunchTests.swift */,
+				1C22C5F329BE846B0019F4D3 /* Fuel_TrackerUITests.swift */,
+				1C22C5F529BE846B0019F4D3 /* Fuel_TrackerUITestsLaunchTests.swift */,
 			);
-			path = "Fuel TruckerUITests";
+			path = "Fuel TrackerUITests";
 			sourceTree = "<group>";
 		};
 		1C22C60229BE86A50019F4D3 /* DataModel */ = {
@@ -314,7 +314,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				1C22C5EA29BE846B0019F4D3 /* Fuel_TruckerTests.swift in Sources */,
+				1C22C5EA29BE846B0019F4D3 /* Fuel_TrackerTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -322,8 +322,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				1C22C5F429BE846B0019F4D3 /* Fuel_TruckerUITests.swift in Sources */,
-				1C22C5F629BE846B0019F4D3 /* Fuel_TruckerUITestsLaunchTests.swift in Sources */,
+				1C22C5F429BE846B0019F4D3 /* Fuel_TrackerUITests.swift in Sources */,
+				1C22C5F629BE846B0019F4D3 /* Fuel_TrackerUITestsLaunchTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
