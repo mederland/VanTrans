@@ -19,6 +19,8 @@ struct CalendarView: View {
         NavigationView{
             VStack{
                 calendarDatePickerView
+                Spacer()
+                totalYearView
             }
             .toolbar {
             ToolbarItem(placement: .navigationBarLeading) {
@@ -63,6 +65,28 @@ struct CalendarView: View {
            NavigationLink("Today's total is: $ \(String(format: "%.2f", totalToday())) ", destination: DayView(chosenDate: $chosenDate), isActive: $navigationActive)
        }
     }
+    
+    var totalYearView: some View {
+        VStack{
+            HStack{
+                Text("All time total is: ")
+                    .font(.system(size: 20).bold())
+                    .foregroundColor(.gray)
+                Text("$ \(String(format: "%.2f", totalYear()))")
+                    .font(.system(size: 20))
+                    .foregroundColor(.blue)
+            }
+        }
+    }
+    
+    private func totalYear() -> Float {
+            var yearTotal: Float = 0.0
+            for item in fuel {
+                    yearTotal += item.summary
+            }
+            return yearTotal
+        }
+    
     private func totalToday() -> Float {
             var todayTotal: Float = 0.0
             for item in fuel {
