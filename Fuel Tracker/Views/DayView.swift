@@ -6,6 +6,7 @@
 //
 
 import SwiftUI
+import Foundation
 import CoreData
 
 struct DayView: View {
@@ -13,17 +14,12 @@ struct DayView: View {
     @FetchRequest(sortDescriptors: [SortDescriptor(\.date, order: .reverse)]) var fuel: FetchedResults<Fuel>
     
     @State private var showingAddView = false
+    @Binding var chosenDate: Date
     
     var body: some View {
         NavigationView {
             VStack {
                 HStack{
-                    Button{
-                        showingAddView.toggle()
-                    } label: {
-                        Label("", systemImage: "plus.circle")
-                            .font(.system(size: 40))
-                    }
                     Spacer()
                     Text("\(String(format: "%.2f", totalSummaryToday())) $ Total")
                         .foregroundColor(.blue)
@@ -34,7 +30,8 @@ struct DayView: View {
 
                 List {
                     ForEach(fuel) { fuel in
-                        NavigationLink(destination: EditFuelView(fuel: fuel)) {
+                if convertDate(givenDate: fuel.date!) == convertDate(givenDate: chosenDate) {
+                    NavigationLink(destination: EditFuelView(fuel: fuel)) {
                             HStack {
                                 VStack(alignment: .leading, spacing: 6) {
                                     Text(fuel.city!)
@@ -49,6 +46,9 @@ struct DayView: View {
                                     .italic()
                             }
                         }
+                    .navigationBarBackButtonHidden(true)
+                        }
+                        
                     }
                     .onDelete(perform: deleteFuel)
                 }
@@ -67,12 +67,11 @@ struct DayView: View {
                 Spacer()
             }
                 ToolbarItem(placement: .navigationBarTrailing) {
-                        Text(Date.now, format: .dateTime.day().month().year())
+                        Text(chosenDate, format: .dateTime.day().month().year())
                                .foregroundColor(.gray)
                                .font(.system(size: 20))
                                .padding(.horizontal)
                 }
-            
         }
             .sheet(isPresented: $showingAddView){
                 AddFuelView()
@@ -90,10 +89,11 @@ private func deleteFuel(offsets: IndexSet){
         }
     }
     
-private func totalSummaryToday() -> Float {
-        var summaryToday: Float = 0.0
+ func totalSummaryToday() -> Float {
+    var summaryToday: Float = 0.0
+    
         for item in fuel {
-            if Calendar.current.isDateInToday(item.date!) {
+            if convertDate(givenDate: item.date!) == convertDate(givenDate: chosenDate) {
                 summaryToday += item.summary
             }
         }
@@ -101,9 +101,8 @@ private func totalSummaryToday() -> Float {
     }
 }
 
-
 struct ContentView_Previews: PreviewProvider {
     static var previews: some View {
-        DayView()
+        DayView(chosenDate: .constant(Date()))
     }
 }

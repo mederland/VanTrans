@@ -20,3 +20,18 @@ func calcTime(date: Date) -> String {
         return "\(days) days ago..."
     }
 }
+
+
+func convertDate(givenDate: Date) -> String {
+    let df = DateFormatter()
+    df.dateFormat = "yyyy-MM-dd hh:mm:ss"
+    let newFormatedDate = df.string(from: givenDate)
+      let date = newFormatedDate
+      let dateFormatter = DateFormatter()
+      dateFormatter.dateFormat = "yyyy-MM-dd hh:mm:ss"
+    let dateFromString : NSDate = dateFormatter.date(from: date)! as NSDate
+      dateFormatter.dateFormat = "dd-MM-yyyy"
+    let givenDate = dateFormatter.string(from: dateFromString as Date)
+    return givenDate
+}
+

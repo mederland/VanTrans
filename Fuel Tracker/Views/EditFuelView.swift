@@ -39,6 +39,7 @@ struct EditFuelView: View {
                 }
             }
         }
+        .navigationBarBackButtonHidden(true)
     }
 }
 

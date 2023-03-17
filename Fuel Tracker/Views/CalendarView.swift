@@ -53,17 +53,25 @@ struct CalendarView: View {
                       .font(.system(size: 20))
                       .padding(.horizontal)
            }
-               DatePicker("Fuel Date", selection: $chosenDate, in: ...Date(), displayedComponents: .date)
+               DatePicker(".", selection: $chosenDate, in: ...Date(), displayedComponents: .date)
                    .datePickerStyle(GraphicalDatePickerStyle())
                    .onChange(of: chosenDate, perform: { value in
-                       print(chosenDate)
                        DispatchQueue.main.asyncAfter(deadline: .now() + 0.2) { //this is because, otherwise user will not see the date selection on date picker
                            navigationActive = true
                        }
                })
-           NavigationLink("", destination: DayView(), isActive: $navigationActive)
+           NavigationLink("Today's total is: $ \(String(format: "%.2f", totalToday())) ", destination: DayView(chosenDate: $chosenDate), isActive: $navigationActive)
        }
     }
+    private func totalToday() -> Float {
+            var todayTotal: Float = 0.0
+            for item in fuel {
+                if Calendar.current.isDateInToday(item.date!) {
+                    todayTotal += item.summary
+                }
+            }
+            return todayTotal
+        }
 }
 
 struct CalendarView_Previews: PreviewProvider {
