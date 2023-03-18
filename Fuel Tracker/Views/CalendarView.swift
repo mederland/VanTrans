@@ -15,6 +15,9 @@ struct CalendarView: View {
     @State private var showingAddView = false
     @State private var showingDayView = false
     @State var navigationActive = false
+    
+    @State private var showingAlert = false
+    
     var body: some View {
         NavigationView{
             VStack{
@@ -62,11 +65,12 @@ struct CalendarView: View {
                            navigationActive = true
                        }
                })
-           NavigationLink("Today's total is: $ \(String(format: "%.2f", totalToday())) ", destination: DayView(chosenDate: $chosenDate), isActive: $navigationActive)
+           NavigationLink("Day's total is: $ \(String(format: "%.2f", totalSummaryToday())) ", destination: DayView(chosenDate: $chosenDate), isActive: $navigationActive)
        }
     }
     
     var totalYearView: some View {
+        
         VStack{
             HStack{
                 Text("All time total is: ")
@@ -77,14 +81,31 @@ struct CalendarView: View {
                     .foregroundColor(.blue)
                 Spacer()
                 Button("Reset") {
-                    print("Reset all data")
+                    showingAlert = true
                 }
+                .foregroundColor(.red)
                 .buttonStyle(.bordered)
+                .alert(isPresented: $showingAlert) {
+                    Alert(
+                    title: Text("Are you sure, you want to delete all your data?")
+                        .foregroundColor(.red),
+                    message: Text("All your saved data will be DELETE")
+                        .foregroundColor(.orange),
+                    primaryButton: .destructive(Text("Delete")){
+                        deleteAllFromDB()
+                    },
+                    secondaryButton: .cancel()
+                    )
+                }
                 .padding()
             }
             .padding()
         }
     }
+    private func deleteAllFromDB(){
+                fuel.forEach(manageObjContext.delete)
+                DataController().saveData(context: manageObjContext)
+        }
     
     private func totalYear() -> Float {
             var yearTotal: Float = 0.0
@@ -103,6 +124,17 @@ struct CalendarView: View {
             }
             return todayTotal
         }
+    
+   private func totalSummaryToday() -> Float {
+       var summaryToday: Float = 0.0
+
+           for item in fuel {
+               if convertDate(givenDate: item.date!) == convertDate(givenDate: chosenDate) {
+                   summaryToday += item.summary
+               }
+           }
+           return summaryToday
+       }
 }
 
 struct CalendarView_Previews: PreviewProvider {
