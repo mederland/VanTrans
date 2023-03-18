@@ -80,8 +80,6 @@ struct DayView: View {
         .navigationViewStyle(.stack)
     }
     
-    
-    
 private func deleteFuel(offsets: IndexSet){
         withAnimation {
             offsets.map {fuel[$0]}.forEach(manageObjContext.delete)

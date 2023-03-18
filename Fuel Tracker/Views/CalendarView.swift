@@ -75,7 +75,14 @@ struct CalendarView: View {
                 Text("$ \(String(format: "%.2f", totalYear()))")
                     .font(.system(size: 20))
                     .foregroundColor(.blue)
+                Spacer()
+                Button("Reset") {
+                    print("Reset all data")
+                }
+                .buttonStyle(.bordered)
+                .padding()
             }
+            .padding()
         }
     }
     
