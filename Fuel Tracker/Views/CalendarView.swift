@@ -89,7 +89,7 @@ struct CalendarView: View {
                     Alert(
                     title: Text("Are you sure, you want to delete all your data?")
                         .foregroundColor(.red),
-                    message: Text("All your saved data will be DELETE")
+                    message: Text("All your saved data will be DELETED")
                         .foregroundColor(.orange),
                     primaryButton: .destructive(Text("Delete")){
                         deleteAllFromDB()

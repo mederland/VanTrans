@@ -18,6 +18,8 @@
 		1C22C60B29BE96C40019F4D3 /* AddFuelView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1C22C60A29BE96C40019F4D3 /* AddFuelView.swift */; };
 		1C22C60D29BE9B600019F4D3 /* TimeFormatting.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1C22C60C29BE9B600019F4D3 /* TimeFormatting.swift */; };
 		1C22C60F29BEB1EB0019F4D3 /* EditFuelView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1C22C60E29BEB1EB0019F4D3 /* EditFuelView.swift */; };
+		1CB118C529C6CEDD001DE616 /* DeviceLocationService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1CB118C429C6CEDD001DE616 /* DeviceLocationService.swift */; };
+		1CB118C729C6CF3E001DE616 /* LocViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1CB118C629C6CF3E001DE616 /* LocViewModel.swift */; };
 		1CBDB91829C251520036438A /* CalendarView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1CBDB91729C251520036438A /* CalendarView.swift */; };
 		1CBDB91A29C252D70036438A /* DayView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1CBDB91929C252D70036438A /* DayView.swift */; };
 /* End PBXBuildFile section */
@@ -54,6 +56,8 @@
 		1C22C60A29BE96C40019F4D3 /* AddFuelView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddFuelView.swift; sourceTree = "<group>"; };
 		1C22C60C29BE9B600019F4D3 /* TimeFormatting.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TimeFormatting.swift; sourceTree = "<group>"; };
 		1C22C60E29BEB1EB0019F4D3 /* EditFuelView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EditFuelView.swift; sourceTree = "<group>"; };
+		1CB118C429C6CEDD001DE616 /* DeviceLocationService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DeviceLocationService.swift; sourceTree = "<group>"; };
+		1CB118C629C6CF3E001DE616 /* LocViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocViewModel.swift; sourceTree = "<group>"; };
 		1CBDB91729C251520036438A /* CalendarView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CalendarView.swift; sourceTree = "<group>"; };
 		1CBDB91929C252D70036438A /* DayView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DayView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -109,6 +113,7 @@
 				1C22C5D829BE84690019F4D3 /* Fuel_TrackerApp.swift */,
 				1C22C60229BE86A50019F4D3 /* DataModel */,
 				1C22C60829BE8E6C0019F4D3 /* Views */,
+				1CB118C329C6CE83001DE616 /* ViewModel */,
 				1C22C60929BE8E8C0019F4D3 /* Helpers */,
 				1C22C5DC29BE846B0019F4D3 /* Assets.xcassets */,
 				1C22C5DE29BE846B0019F4D3 /* Preview Content */,
@@ -165,8 +170,17 @@
 			isa = PBXGroup;
 			children = (
 				1C22C60C29BE9B600019F4D3 /* TimeFormatting.swift */,
+				1CB118C429C6CEDD001DE616 /* DeviceLocationService.swift */,
 			);
 			path = Helpers;
+			sourceTree = "<group>";
+		};
+		1CB118C329C6CE83001DE616 /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				1CB118C629C6CF3E001DE616 /* LocViewModel.swift */,
+			);
+			path = ViewModel;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -304,9 +318,11 @@
 				1C22C5D929BE84690019F4D3 /* Fuel_TrackerApp.swift in Sources */,
 				1CBDB91A29C252D70036438A /* DayView.swift in Sources */,
 				1C22C60F29BEB1EB0019F4D3 /* EditFuelView.swift in Sources */,
+				1CB118C729C6CF3E001DE616 /* LocViewModel.swift in Sources */,
 				1C22C60529BE86EC0019F4D3 /* FuelModel.xcdatamodeld in Sources */,
 				1C22C60B29BE96C40019F4D3 /* AddFuelView.swift in Sources */,
 				1C22C60D29BE9B600019F4D3 /* TimeFormatting.swift in Sources */,
+				1CB118C529C6CEDD001DE616 /* DeviceLocationService.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
