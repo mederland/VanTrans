@@ -45,11 +45,9 @@ class LocViewModel: ObservableObject {
                             if pm.country != nil {
                                 addressString = addressString + pm.country!
                             }
-                            print ("AddressString in CH: \(addressString)")
                             self.addressLine = addressString
                             
                         }
-                        print ("AddressString after CH: \(self.addressLine ?? "Unknown")")
                     } else {return}
                 }
             })

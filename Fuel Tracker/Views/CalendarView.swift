@@ -65,7 +65,12 @@ struct CalendarView: View {
                            navigationActive = true
                        }
                })
-           NavigationLink("Day's total is: $ \(String(format: "%.2f", totalSummaryToday())) ", destination: DayView(chosenDate: $chosenDate), isActive: $navigationActive)
+           NavigationLink(
+            destination: DayView(chosenDate: $chosenDate), isActive: $navigationActive)
+           {
+               Text("Days total: $ \(String(format: "%.2f", totalSummaryToday())) ")
+           }
+
        }
     }
     
