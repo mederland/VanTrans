@@ -79,18 +79,27 @@ struct CalendarView: View {
             VStack{
                 HStack{
                     DatePicker("Start", selection: $startDate, in: ...Date(), displayedComponents: .date)
+                        .padding()
                     DatePicker("End", selection: $endDate, in: ...Date(), displayedComponents: .date)
+                        .padding()
                 }
-                    Text ("Total between Dates is: \(String(format: "%.2f", daysBetweenDates(startDate: startDate, endDate: endDate)))")
+                
+//                GeometryReader { geometry in
+//                    Text ("Total between Dates is: $\(String(format: "%.2f", daysBetweenDates(startDate: startDate, endDate: endDate)))")
+//                        .padding()
+//                        .background(Color.blue.frame(width: geometry.size.width))
+//                }
+                
+                    Text ("Total between Dates is: $\(String(format: "%.2f", daysBetweenDates(startDate: startDate, endDate: endDate)))")
                     .padding()
-                        .background(RoundedRectangle(cornerRadius: 10).stroke(Color.blue, lineWidth: 2))
+                    .background(RoundedRectangle(cornerRadius: 10).stroke(Color.blue, lineWidth: 1).frame(alignment: .centerLastTextBaseline))
                     
                 HStack{
                     Text("All time total is: ")
-                        .font(.system(size: 20).bold())
+                        .font(.system(size: 12).bold())
                         .foregroundColor(.gray)
                     Text("$ \(String(format: "%.2f", totalYear()))")
-                        .font(.system(size: 20))
+                        .font(.system(size: 12))
                         .foregroundColor(.blue)
                     Spacer()
                     Button("Reset") {
