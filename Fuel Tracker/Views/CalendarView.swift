@@ -24,8 +24,10 @@ struct CalendarView: View {
         NavigationView{
             VStack{
                 calendarDatePickerView
+                    .frame(alignment: .top)
                 Spacer()
                 totalYearView
+                    .frame( height: 20, alignment: .bottom)
             }
             .toolbar {
             ToolbarItem(placement: .navigationBarLeading) {
@@ -105,6 +107,7 @@ struct CalendarView: View {
                     Button("Reset") {
                         showingAlert = true
                     }
+                    .font(.system(size: 12))
                     .foregroundColor(.red)
                     .buttonStyle(.bordered)
                     .alert(isPresented: $showingAlert) {
