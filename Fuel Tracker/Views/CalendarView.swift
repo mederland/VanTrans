@@ -12,6 +12,8 @@ struct CalendarView: View {
     @FetchRequest(sortDescriptors: [SortDescriptor(\.date, order: .reverse)]) var fuel: FetchedResults<Fuel>
     
     @State var chosenDate = Date()
+    @State var startDate = Date()
+    @State var endDate = Date()
     @State private var showingAddView = false
     @State private var showingDayView = false
     @State var navigationActive = false
@@ -70,77 +72,106 @@ struct CalendarView: View {
            {
                Text("Days total: $ \(String(format: "%.2f", totalSummaryToday())) ")
            }
-
        }
     }
     
     var totalYearView: some View {
-        
-        VStack{
-            HStack{
-                Text("All time total is: ")
-                    .font(.system(size: 20).bold())
-                    .foregroundColor(.gray)
-                Text("$ \(String(format: "%.2f", totalYear()))")
-                    .font(.system(size: 20))
-                    .foregroundColor(.blue)
-                Spacer()
-                Button("Reset") {
-                    showingAlert = true
+            VStack{
+                HStack{
+                    DatePicker("Start", selection: $startDate, in: ...Date(), displayedComponents: .date)
+                    DatePicker("End", selection: $endDate, in: ...Date(), displayedComponents: .date)
                 }
-                .foregroundColor(.red)
-                .buttonStyle(.bordered)
-                .alert(isPresented: $showingAlert) {
-                    Alert(
-                    title: Text("Are you sure, you want to delete all your data?")
-                        .foregroundColor(.red),
-                    message: Text("All your saved data will be DELETED")
-                        .foregroundColor(.orange),
-                    primaryButton: .destructive(Text("Delete")){
-                        deleteAllFromDB()
-                    },
-                    secondaryButton: .cancel()
-                    )
+                    Text ("Total between Dates is: \(String(format: "%.2f", daysBetweenDates(startDate: startDate, endDate: endDate)))")
+                    .padding()
+                        .background(RoundedRectangle(cornerRadius: 10).stroke(Color.blue, lineWidth: 2))
+                    
+                HStack{
+                    Text("All time total is: ")
+                        .font(.system(size: 20).bold())
+                        .foregroundColor(.gray)
+                    Text("$ \(String(format: "%.2f", totalYear()))")
+                        .font(.system(size: 20))
+                        .foregroundColor(.blue)
+                    Spacer()
+                    Button("Reset") {
+                        showingAlert = true
+                    }
+                    .foregroundColor(.red)
+                    .buttonStyle(.bordered)
+                    .alert(isPresented: $showingAlert) {
+                        Alert(
+                        title: Text("Are you sure, you want to delete all your data?")
+                            .foregroundColor(.red),
+                        message: Text("All your saved data will be DELETED")
+                            .foregroundColor(.orange),
+                        primaryButton: .destructive(Text("Delete")){
+                            deleteAllFromDB()
+                        },
+                        secondaryButton: .cancel()
+                        )
+                    }
+                    .padding()
                 }
                 .padding()
             }
-            .padding()
-        }
     }
-    private func deleteAllFromDB(){
-                fuel.forEach(manageObjContext.delete)
-                DataController().saveData(context: manageObjContext)
-        }
     
-    private func totalYear() -> Float {
-            var yearTotal: Float = 0.0
+    func daysBetweenDates(startDate : Date, endDate: Date) -> Float {
+        let calendar = Calendar.current
+        var weekTotal: Float = 0.0
+        var currentDate = startDate
+        while currentDate <= endDate {
             for item in fuel {
-                    yearTotal += item.summary
-            }
-            return yearTotal
-        }
-    
-    private func totalToday() -> Float {
-            var todayTotal: Float = 0.0
-            for item in fuel {
-                if Calendar.current.isDateInToday(item.date!) {
-                    todayTotal += item.summary
+                if convertDate(givenDate: item.date!) == convertDate(givenDate: currentDate) {
+                    weekTotal += item.summary
                 }
             }
-            return todayTotal
+            currentDate = calendar.date(byAdding: .day, value: 1, to: currentDate)!
+//            print("\(currentDate) insideof \(weekTotal)")
         }
+        return weekTotal
+    }
     
-   private func totalSummaryToday() -> Float {
-       var summaryToday: Float = 0.0
-
-           for item in fuel {
-               if convertDate(givenDate: item.date!) == convertDate(givenDate: chosenDate) {
-                   summaryToday += item.summary
-               }
-           }
-           return summaryToday
+    
+    
+    func deleteAllFromDB(){
+               fuel.forEach(manageObjContext.delete)
+               DataController().saveData(context: manageObjContext)
        }
+   
+    func totalYear() -> Float {
+           var yearTotal: Float = 0.0
+           for item in fuel {
+                   yearTotal += item.summary
+           }
+           return yearTotal
+       }
+   
+//    func totalToday() -> Float {
+//           var todayTotal: Float = 0.0
+//           for item in fuel {
+//               if Calendar.current.isDateInToday(item.date!) {
+//                   todayTotal += item.summary
+//               }
+//           }
+//           return todayTotal
+//       }
+   
+   func totalSummaryToday() -> Float {
+      var summaryToday: Float = 0.0
+
+          for item in fuel {
+              if convertDate(givenDate: item.date!) == convertDate(givenDate: chosenDate) {
+                  summaryToday += item.summary
+              }
+          }
+          return summaryToday
+      }
+
 }
+
+
+
 
 struct CalendarView_Previews: PreviewProvider {
     static var previews: some View {
